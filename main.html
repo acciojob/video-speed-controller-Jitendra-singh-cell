@@ -6,13 +6,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <div class="wrapper">
-    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" controls></video>
-    <div class="speed">
-      <div class="speed-bar">1×</div>
+<div class="wrapper">
+        <video class="video" src="https://www.w3schools.com/html/mov_bbb.mp4" width="765" height="430"></video>
+        <div class="controls">
+            <button class="player__button">►</button>
+            <button class="skip" data-skip="-10">« 10s</button>
+            <button class="skip" data-skip="25">25s »</button>
+            <input type="range" class="volume" min="0" max="1" step="0.05" value="1" title="Volume">
+            <input type="range" class="playbackSpeed" min="0.5" max="2" step="0.1" value="1" title="Playback Speed">
+            <div class="progress">
+                <div class="progress__filled"></div>
+            </div>
+        </div>
     </div>
-  </div>
 
 <script  src="./script.js">
   //Your code goes here
